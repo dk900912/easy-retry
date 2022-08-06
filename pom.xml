@@ -8,11 +8,13 @@
     <artifactId>easy-retry</artifactId>
     <version>1.0</version>
 
+    <name>easy-retry</name>
+    <description>easy java retry framework</description>
     <url>https://github.com/dk900912/easy-retry.git</url>
 
     <developers>
         <developer>
-            <name>程序猿杜小头</name>
+            <name>crimson_typhoon</name>
             <email>1289615518@qq.com</email>
         </developer>
     </developers>
