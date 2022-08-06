@@ -39,7 +39,6 @@ public class RetryTemplate implements RetryOperations {
 		this.retryPolicy = retryPolicy;
 	}
 
-
 	@Override
 	public final <T, E extends Throwable> T execute(RetryCallback<T, E> retryCallback) throws E {
 		return doExecute(retryCallback);
@@ -83,9 +82,9 @@ public class RetryTemplate implements RetryOperations {
 		} catch (Throwable e) {
 			throw RetryTemplate.<E>wrapIfNecessary(e);
 		} finally {
-			logger.info("0={===> {} <===}=0", context);
 			close(retryPolicy, context);
 			RetrySynchronizationManager.clear();
+			logger.info("0={===> {} <===}=0", context);
 		}
 	}
 

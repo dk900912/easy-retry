@@ -6,7 +6,7 @@
 
     <groupId>io.github.dk900912</groupId>
     <artifactId>easy-retry</artifactId>
-    <version>1.0</version>
+    <version>1.0.0</version>
 
     <name>easy-retry</name>
     <description>easy java retry framework</description>
